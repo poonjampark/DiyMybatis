@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.panzhanpeng.mybatis.mapper.TuserMapper">
+	<select id="selectByPrimaryKey" resultType="com.panzhanpeng.mybatis.object.Tuser" >
+		select id, name, email from t_user where id = ?
+	</select>
+	
+	<select id="selectAll" resultType="com.panzhanpeng.mybatis.object.Tuser">
+		select id, name, email from t_user
+	</select>
+	
+</mapper>
